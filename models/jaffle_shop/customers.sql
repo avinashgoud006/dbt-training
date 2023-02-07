@@ -1,3 +1,6 @@
+
+{{ config (alias='Customer_Orders') }}
+
 with customers as (
 
     select
