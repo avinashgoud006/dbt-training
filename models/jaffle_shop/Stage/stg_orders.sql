@@ -1,4 +1,4 @@
-{{config (materialized = 'table',schema='Stage') }}
+{{config (materialized = 'incremental',schema='Stage',unique_key='order_id') }}
 
 select
     id as order_id,
@@ -6,3 +6,9 @@ select
     order_date,
     status
 from raw.jaffle_shop.orders
+
+{% if is_incremental() %}
+
+where order_date > (select max(order_date) from {{this}})
+
+{% endif %}

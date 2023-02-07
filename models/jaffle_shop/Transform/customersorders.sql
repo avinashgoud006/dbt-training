@@ -1,4 +1,4 @@
-{{ config (materialized = 'table',schema='Transform') }}
+{{ config (materialized = 'table',schema='Transform',sql_header = "alter session set timezone = 'Asia/Kolkata';") }}
 
 with customers as (
 
