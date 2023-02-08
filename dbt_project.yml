@@ -38,3 +38,7 @@ models:
       materialized: view
     jaffle_shop:
       materialized: view
+
+seeds:
+  jaffle_shop:
+    schema: seed_data
