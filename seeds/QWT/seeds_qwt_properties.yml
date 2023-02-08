@@ -1,0 +1,10 @@
+version : 2
+
+seeds:
+  - name: divisions
+    description: "Division seed file data"
+    docs:
+      show: true
+    config:
+      database: QWT_ANALYTICS
+      schema: Staging
