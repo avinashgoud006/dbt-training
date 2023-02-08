@@ -7,3 +7,4 @@ seeds:
       show: true
     config:
       schema: seed_objects
+      column_types: {id: varchar}
