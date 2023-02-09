@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_customers
-    description: "This model cleans up customer data"
+    description:  "{{ doc ('customers') }}"
     columns:
       - name: customer_id
         description: "Primary key"
