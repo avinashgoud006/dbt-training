@@ -9,3 +9,11 @@ seeds:
       database: QWT_ANALYTICS 
       alias: STG_QWT_DIVISIONS
       schema: Staging
+  - name: categories
+    description: "Categories seed file data"
+    docs:
+      show: true
+    config:
+      database: QWT_ANALYTICS 
+      alias: STG_QWT_CATEGORIES
+      schema: Staging
