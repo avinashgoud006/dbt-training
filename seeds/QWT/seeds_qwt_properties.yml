@@ -6,5 +6,6 @@ seeds:
     docs:
       show: true
     config:
-      database: QWT_ANALYTICS
+      database: QWT_ANALYTICS 
+      alias: STG_QWT_DIVISIONS
       schema: Staging
