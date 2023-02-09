@@ -2,16 +2,20 @@ version: 2
 
 models:
   - name: stg_customers
+    description: "This model cleans up customer data"
     columns:
       - name: customer_id
+        description: "Primary key"
         tests:
           - unique
           - not_null
           - is_even
 
   - name: stg_orders
+    description: "This model cleans up order data"
     columns:
       - name: orderid
+        description: "Primary key"
         tests:
           - is_even  
       - name: status
