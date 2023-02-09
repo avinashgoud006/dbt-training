@@ -29,3 +29,14 @@ models:
               to: ref('stg_customers')
               field: customer_id
 
+exposures:
+  - name: weekly_sales_tracker
+    type: dashboard
+    url: https://google.com
+    description: "Sales tracker for Jaffle Shop"
+    depends_on:
+      - ref('stg_customers')
+      - ref('customersorders')
+    owner:
+      name: Jaffle Shop Internal 
+      email: xyz@abc.com
