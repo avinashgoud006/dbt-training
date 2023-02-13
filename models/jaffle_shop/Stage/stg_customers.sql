@@ -1,4 +1,4 @@
-{{config (materialized = 'table',schema='Stage') }}
+{{config (materialized = 'table',schema='Stage',pre_hook=["insert into ANALYTICS.audit.dbt_audit_logs(execution_start_time, execution_end_time, object_name) values (current_timestamp(),null,'{{this}}')"] ) }}
 
 select
     id as customer_id,
